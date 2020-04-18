@@ -9,9 +9,7 @@ while True:
 	if rand == r :
 		print('恭喜你猜對了')
 		break
-	else:
- 		print('猜錯囉')
- 		if i > 0 :
- 			print('還有' , i , '次機會')
- 		if i == 0 :
- 			break
+	elif rand > r:
+		print('比答案大')
+	elif rand < r:
+		print('比答案小')
